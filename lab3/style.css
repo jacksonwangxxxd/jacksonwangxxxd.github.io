@@ -1,0 +1,54 @@
+body{background-color: pink;	
+	font-family: arial, sans-serif;
+	color:green;
+	padding-top: 50px;
+  	padding-right: 30px;
+  	padding-bottom: 50px;
+  	padding-left: 80px}
+
+nav{	font-weight:bold;
+		border:2px solid rosybrown;
+		width: 40em;
+		background-color:rosybrown;
+		text-align:center;
+		color:brown;}
+
+nav ul{	display:none;
+		list-style:none;
+		margin:0;
+		padding:0;}
+
+nav:hover ul{display:block;}
+
+nav ul	li {border-top:2px solid brown;
+			background-color:sandybrown;
+			width:40em;
+			color:brown}
+
+nav ul li:hover{background-color:saddlebrown;}
+a{text-decoration:none;}
+
+@media screen and (min-width:480px){
+	body{
+		background-color: lightblue;
+	}
+}
+
+.navbar ul{
+position:relative;
+top: 10px;
+left:10px;
+width:100px;
+}
+
+.navbar li {
+	background :aliceblue;
+	margin:10;
+	padding:10;
+	border-right:20;
+}
+
+.navbar{
+	font-weight:bold;
+	color:orangered;
+}
