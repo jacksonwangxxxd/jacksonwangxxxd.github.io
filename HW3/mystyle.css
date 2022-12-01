@@ -16,8 +16,10 @@ div{
 	margin-right:auto;
 }
 
-@media screen and (min-width: 480px){
-	background-color: blue;
+@media screen and (min-width: 600px){
+	body{
+		background-color: pink;
+	}
 }
 
 float{
@@ -30,6 +32,10 @@ floattop{
 
 floatright{
 	float: right;
+}
+
+textarea{
+	float:right;
 }
 
 img{
