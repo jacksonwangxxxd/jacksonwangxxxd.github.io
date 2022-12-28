@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	
+	<div id="block">
+		<h2 class ="header">JS Calculator</h2>
+		<form>
+			<label>Number 1</label>
+			<input type ="number" id="num1" class="input_box">
+			<label><p>Number 2</label>
+			<input type ="number" id="num2" class="input_box">
+			<label><p>Calculation</label>
+			<select id="operate" name="method">
+				<option value="0">+</option>
+				<option value="1">-</option>
+				<option value="2">*</option>
+				<option value="3">/</option>
+			</select>
+		</form>
+		<input type ="button" value="Count" id="button" class="cal_button" onclick="calculator()">
+		<p>Result = <span id="result"></span></p>
+
+
+	</div>
+
+<script type="text/javascript">
+
+		
+
+
+	function calculator(){
+		var result=0;
+		var n1=parseInt(document.getElementById('num1').value);
+		var n2=parseInt(document.getElementById('num2').value);
+		var operator=parseInt(document.getElementById('operate').value);
+
+		if(operator==0){
+			result=add(n1,n2);
+		}
+		else if(operator==1){
+			result=minus(n1,n2);
+		}
+		else if(operator==2){
+			result=multiple(n1,n2);
+		}
+		else{
+			result=divide(n1,n2);
+		}
+
+		alert(result);
+	}
+	
+
+	
+
+	function add(num1,num2){
+		return num1+num2;
+	}
+
+
+	function minus(num1,num2){
+		return num1-num2;
+	}
+
+
+	function multiple(num1,num2){
+		return num1*num2;
+	}
+
+
+	function divide(num1,num2){
+		return num1/num2;
+	}
+</script>
+</body>
+</html>
